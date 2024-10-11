@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import tn.esprit.tpfoyer17.entities.Bloc;
 import tn.esprit.tpfoyer17.services.interfaces.IBlocService;
 
+
 import java.util.List;
 
 @RestController
@@ -36,7 +37,7 @@ public class BlocController {
     }
 
 
-    @G<etMapping("/retrieveBloc/{idBloc}")
+    @GetMapping("/retrieveBloc/{idBloc}")
     public Bloc retrieveBloc(@PathVariable("idBloc") long idBloc) {
         return blocService.retrieveBloc(idBloc);
     }
